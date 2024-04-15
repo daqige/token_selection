@@ -533,7 +533,7 @@ def main():
 
     # CHANGES #3: Process the original model with VcasModelProcessor
     from transformers import BertLayer
-    model.to(training_args.device)
+    model.to(training_args.device) 
     processor = VcasModelProcessor(model, BertLayer, sample_scheme)
     processor.process()
 
